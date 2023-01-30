@@ -1,0 +1,290 @@
+/* CSS Reset */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-heihht: 100px;
+}
+
+/* navigation bar */
+#navbar{
+    justify-content: center;
+    align-items: center;
+   }
+
+/* navigation bar: logo and image */
+#logo{
+    display: flex;
+    margin: auto;
+}
+
+.left {
+    display: flex;
+    margin: 15px 150px;
+}
+
+.left p{
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: right;
+}
+
+.right {
+    display: flex;
+    float: right;
+    margin:15px 150px;
+}
+.right p{
+    margin-top: 15px;
+    font-size: 10px;
+    text-align: left;
+}
+
+#icon{
+    height: 60px;
+    margin: 15px auto;
+}
+
+
+/* navigation bar: list styling */
+.ctn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 5px;
+
+}
+
+.m-{
+    margin: 12px auto;
+}
+
+#navbar::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+nav a{
+    color: black;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: cursive;
+}
+nav a:hover{
+    color: white;
+    background-color: black;
+}
+
+/* Home Section */
+#home{
+    height: 350px;
+}
+
+#home::before{
+    content: "";
+    position: absolute;
+    background: url(../img/bg.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#clients{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#home h1{
+    color: #072f50;
+    text-align: center;
+    font-family: serif;
+}
+
+#home p{
+    color: #072f50;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: serif;
+}
+
+/* Services Section */
+#trainers{
+    margin: 35px 15px 15px 15px;
+    display: flex;
+}
+
+.container{
+    max-width: 70%;
+    margin: auto;
+}
+
+.trainer {
+    position: relative;
+    width: 50%;
+}
+  
+.image {
+    display: block;
+    width: 70%;
+    height: 70%;
+    margin: 0px 10px;
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #000000;
+}
+  
+.trainer:hover .overlay {
+    opacity: 0.6;
+}
+  
+.text{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#trainers p{
+    font-family: serif;
+}
+
+.contact img{
+    padding: 6px;
+}
+
+/* Service section */
+#services{
+    height: 300px;
+    background-color: rgb(209, 208, 208);
+}
+
+.services-container{
+    max-width: 98%;
+    margin: 0px auto;
+    display: flex;
+    position: relative;
+}
+
+.service-item{
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-top: 62px;
+
+}
+
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);      
+}
+
+.service-item img{
+    width: 90%;
+    height: 90%;
+    color: #000;
+    opacity: 1;
+    margin: 3px;
+}
+
+
+/* footer section */
+footer{
+    background-color: black;
+    color: white;
+    padding: 9px 20px;
+}
+
+.footer-container{
+    background-color: black;
+    color: white;
+}
+.footer-flex{
+    display: flex;
+    max-width: 85%;
+    margin: auto;
+}
+.box{
+    margin: 34px;
+}
+.box li{
+    list-style: none;
+}
+.box li a{
+    text-decoration: none;
+}
+
+.box h2{
+    margin-bottom: 8px;
+}
+
+.max{
+    max-width: 33%;
+}
+
+.subscribe{
+    display: flex;
+}
+.ft-btn{
+    background-color: rgb(128, 185, 231);
+    color:white ;
+    border: 1px solid grey;
+    font-size: 14px;
+    padding: 4px 7px;
+    cursor: pointer;
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secodary{
+    font-family: serif;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
